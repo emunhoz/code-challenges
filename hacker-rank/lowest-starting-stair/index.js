@@ -2,8 +2,8 @@ export function findLowestStartingStair(arr) {
   let min = Number.MAX_VALUE
   let sum = 0
 
-  for (const i in arr) {
-    sum = sum + arr[i]
+  for (const i of arr) {
+    sum += i
     min = Math.min(sum, min)
   }
 
